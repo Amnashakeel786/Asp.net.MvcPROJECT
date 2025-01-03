@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewBag.Title = "Services";
+}
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+            nav a {
+                color: white;
+                padding: 14px 20px;
+                text-decoration: none;
+                text-align: center;
+            }
+
+                nav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="@Url.Action("Index", "Home")">Home</a>
+        <a href="@Url.Action("About", "Home")">About</a>
+        <a href="@Url.Action("Services", "Home")">Services</a>
+        <a href="@Url.Action("Contact", "Home")">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Mobile Application Development</li>
+            <li>Software Consulting</li>
+            <li>Cloud Solutions</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My ASP.NET MVC Website | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
+
+
+
